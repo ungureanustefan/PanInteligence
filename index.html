@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <link>
+        <title>PanInteligence Challenge</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/gh/noamsauerutley/shortest-path@master/shortestPath.js"></script>
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <div>
+            <textarea cols="22" rows="10" id="flights">["AB800", "BC900", "CD400", "DE400", "BF400", "CE300", "DE300", "EB600", "CE200", "DC700", "EB500", "FD200"]</textarea>
+            <textarea cols="22" rows="10" id="journeys">
+2, B20, D
+1, B30, D
+2, A20, D
+2, C30, A
+2, B10, C
+5, B10, C
+1, D25, B
+4, D40, A
+2, B5, D
+9, B30, D</textarea>
+            <button onclick="journeySuggestion()" id="button">GO</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle</th>
+                    <th>Vehicle Cost</th>
+                    <th>Outbound Route</th>
+                    <th>Outbound Cost</th>
+                    <th>Inbound Route</th>
+                    <th>Inbound Cost</th>
+                    <th>Total Cost</th>
+                </tr>
+            </thead>
+            <tbody id="result">
+            </tbody>
+        </table>
+    </body>
+</html>

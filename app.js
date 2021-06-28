@@ -94,7 +94,7 @@ const buildTable = results => {                                 //Build a functi
 
 const journeySuggestion = () => {
     const graph = buildGraph(document.getElementById("flights").value) //Build a graph with the standard flights
-
+    console.log(graph)
     const results = [];
     const journeys = document.getElementById("journeys").value.split("\n"); //Create an array of journeys separated by newline
     /*Loop through the "journeys" array and obtain number of passengers, departure location, 
